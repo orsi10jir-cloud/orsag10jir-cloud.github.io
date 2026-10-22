@@ -148,6 +148,43 @@ code {
     cursor: not-allowed;
 }
 
+/* ---------- Rychlé odkazy ---------- */
+.quick {
+    margin-bottom: 60px;
+}
+
+.quick h2 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.quick-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.quick-list a {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid #262b34;
+    border-radius: 10px;
+    background-color: #161a21;
+    color: #e6e8eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.quick-list a:hover,
+.quick-list a:focus {
+    border-color: #7cc4ff;
+    color: #7cc4ff;
+}
+
 /* ---------- Projekty ---------- */
 .projects h2,
 .about h2 {

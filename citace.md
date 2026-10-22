@@ -39,6 +39,13 @@ funkční weby a projekty, takže fakt nevím, jak to mám udělat.
 stránku na téma (1) udělej taky, téma řeknu.
 ```
 
+### Prompt 3 – hlavní stránka s odkazy
+
+```
+Ne, učitel chce stránku tu, kterou jsem ti posílal (orsi10jir-cloud.github.io),
+kde budou odkazy na ty věci, o kterých jsem ti psal – Google Search, portfolio atd.
+```
+
 ## 5. Prohlášení
 
 Kód portfolia byl vygenerován s pomocí AI (Claude, Anthropic) na základě výše uvedených promptů.
