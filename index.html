@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jiří – portfolio</title>
+        <meta name="description" content="Portfolio webových projektů – Jiří (orsi10jir-cloud)">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="index.html">jiří<span>.dev</span></a>
+            <nav aria-label="Hlavní navigace">
+                <a href="#projekty">Projekty</a>
+                <a href="#o-mne">O mně</a>
+                <a href="https://github.com/orsi10jir-cloud" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Úvodní sekce -->
+            <section class="hero">
+                <p class="eyebrow">Portfolio · webové projekty</p>
+                <h1>Ahoj, jsem Jiří.<br>Učím se dělat weby a tady jsou moje projekty.</h1>
+                <p class="lead">Všechny projekty jsou živé na GitHub Pages – klikni na kartu a otevře se funkční web. U každého je i odkaz na zdrojový kód.</p>
+                <a class="btn" href="#projekty">Zobrazit projekty ↓</a>
+            </section>
+
+            <!-- Seznam projektů – každá karta = jeden web -->
+            <section id="projekty" class="projects" aria-labelledby="projekty-nadpis">
+                <h2 id="projekty-nadpis">Projekty</h2>
+
+                <div class="grid">
+                    <!-- Projekt 1: Google Search (CS50 Web, Project 0) -->
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="tag">HTML · CSS · formuláře</span>
+                            <span class="status live">Online</span>
+                        </div>
+                        <h3>Google Search</h3>
+                        <p>Vlastní front-end pro Google Search, Image Search a Advanced Search podle zadání CS50 Web – Project 0. Navíc stránka s ukázkou všech formulářových prvků.</p>
+                        <ul class="sublinks">
+                            <li><a href="https://orsi10jir-cloud.github.io/googlesearch/index.html">Google Search</a></li>
+                            <li><a href="https://orsi10jir-cloud.github.io/googlesearch/images.html">Image Search</a></li>
+                            <li><a href="https://orsi10jir-cloud.github.io/googlesearch/advanced.html">Advanced Search</a></li>
+                            <li><a href="https://orsi10jir-cloud.github.io/googlesearch/forms.html">Formuláře</a></li>
+                        </ul>
+                        <div class="card-actions">
+                            <a class="btn" href="https://orsi10jir-cloud.github.io/googlesearch/">Otevřít web</a>
+                            <a class="btn btn-ghost" href="https://github.com/orsi10jir-cloud/googlesearch" target="_blank" rel="noopener">Kód</a>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 2: EPOX web -->
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="tag">HTML · CSS · JavaScript</span>
+                            <span class="status live">Online</span>
+                        </div>
+                        <h3>EPOX web</h3>
+                        <p>Hravý web s vlastním terminálem (napiš <code>help</code>), faktem dne, hodem kostkou a hodinami.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="https://orsi10jir-cloud.github.io/EPOX/">Otevřít web</a>
+                            <a class="btn btn-ghost" href="https://github.com/orsi10jir-cloud/EPOX" target="_blank" rel="noopener">Kód</a>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 3: Stránka na téma (1) – připravuje se -->
+                    <article class="card card-soon">
+                        <div class="card-top">
+                            <span class="tag">HTML · CSS</span>
+                            <span class="status soon">Připravuje se</span>
+                        </div>
+                        <h3>Stránka na téma</h3>
+                        <p>Samostatná stránka na zvolené téma. Projekt ještě není hotový – odkaz přibude po zveřejnění.</p>
+                        <div class="card-actions">
+                            <span class="btn btn-disabled" aria-disabled="true">Zatím není online</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- O mně -->
+            <section id="o-mne" class="about" aria-labelledby="o-mne-nadpis">
+                <h2 id="o-mne-nadpis">O mně</h2>
+                <p>Studuji tvorbu webových stránek. Pracuji v editoru VS Code, kód verzuji v Gitu a weby zveřejňuji přes GitHub Pages. Při práci používám AI asistenty a všechny použité prompty a zdroje uvádím v citacích.</p>
+                <ul class="skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Formuláře</li>
+                    <li>JavaScript (základy)</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>GitHub Pages</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <ul>
+                <li><a href="https://validator.w3.org/nu/?doc=https://orsi10jir-cloud.github.io/index.html" target="_blank" rel="noopener">Validace HTML</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https://orsi10jir-cloud.github.io/index.html" target="_blank" rel="noopener">Validace CSS</a></li>
+                <li><a href="https://github.com/orsi10jir-cloud/orsi10jir-cloud.github.io/blob/main/citace.md" target="_blank" rel="noopener">Citace a zdroje</a></li>
+                <li><a href="https://github.com/orsi10jir-cloud" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <p>© 2026 Jiří</p>
+        </footer>
+    </body>
+</html>

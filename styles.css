@@ -1,0 +1,317 @@
+/* ==========================================================
+   Portfolio – Jiří (orsi10jir-cloud)
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f1115;
+    color: #e6e8eb;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #7cc4ff;
+}
+
+code {
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: #1d2129;
+    color: #9be28a;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+}
+
+/* ---------- Hlavička ---------- */
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 24px;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 20px;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #7cc4ff;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+}
+
+.site-header nav a {
+    color: #b9bfc8;
+    text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus {
+    color: #ffffff;
+}
+
+/* ---------- Úvod ---------- */
+.hero {
+    padding: 70px 0 60px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #7cc4ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 760px;
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.lead {
+    max-width: 640px;
+    margin: 0 0 28px;
+    color: #b9bfc8;
+    font-size: 18px;
+}
+
+/* ---------- Tlačítka ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid #7cc4ff;
+    border-radius: 8px;
+    background-color: #7cc4ff;
+    color: #0f1115;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #a6d7ff;
+    border-color: #a6d7ff;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: #7cc4ff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+    background-color: #1d2129;
+    color: #a6d7ff;
+}
+
+.btn-disabled {
+    border-color: #3a3f48;
+    background-color: #23272f;
+    color: #7a818c;
+    cursor: not-allowed;
+}
+
+/* ---------- Projekty ---------- */
+.projects h2,
+.about h2 {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    border: 1px solid #262b34;
+    border-radius: 14px;
+    background-color: #161a21;
+}
+
+.card:hover {
+    border-color: #3d6a92;
+}
+
+.card h3 {
+    margin: 14px 0 8px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 0 0 14px;
+    color: #b9bfc8;
+}
+
+.card-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.tag {
+    color: #8a929e;
+    font-size: 13px;
+}
+
+.status {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.live {
+    background-color: #183b24;
+    color: #7ee29a;
+}
+
+.status.soon {
+    background-color: #3b3218;
+    color: #e8c96a;
+}
+
+.card-soon {
+    border-style: dashed;
+    opacity: 0.8;
+}
+
+.sublinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+/* ---------- O mně ---------- */
+.about {
+    padding: 70px 0 60px;
+}
+
+.about p {
+    max-width: 720px;
+    color: #b9bfc8;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 6px 14px;
+    border: 1px solid #262b34;
+    border-radius: 999px;
+    background-color: #161a21;
+    color: #e6e8eb;
+    font-size: 14px;
+}
+
+/* ---------- Patička ---------- */
+.site-footer {
+    flex-shrink: 0;
+    border-top: 1px solid #262b34;
+    background-color: #0b0d10;
+    color: #8a929e;
+    font-size: 14px;
+}
+
+.site-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+    margin: 0;
+    padding: 18px 20px 6px;
+    list-style: none;
+}
+
+.site-footer a {
+    color: #b9bfc8;
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 0 20px 18px;
+    text-align: center;
+}
+
+/* ---------- Mobil ---------- */
+@media (max-width: 640px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
